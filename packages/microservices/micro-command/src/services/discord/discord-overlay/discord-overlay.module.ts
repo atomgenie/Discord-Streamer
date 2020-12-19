@@ -1,8 +1,10 @@
 import { Module } from "@nestjs/common"
-import { DiscordOverlay } from "./discord-overlay.service"
+import { EtcdModule } from "services/etcd/etcd.module"
+import { DiscordOverlayService } from "./discord-overlay.service"
 
 @Module({
-    providers: [DiscordOverlay],
-    exports: [DiscordOverlay],
+    providers: [DiscordOverlayService],
+    exports: [DiscordOverlayService],
+    imports: [EtcdModule],
 })
 export class DiscordOverlayModule {}

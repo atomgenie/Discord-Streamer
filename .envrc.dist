@@ -1,1 +1,2 @@
 export DISCORD_TOKEN=<Your discord token>
+export ETCD_HOST=http://localhost:2479

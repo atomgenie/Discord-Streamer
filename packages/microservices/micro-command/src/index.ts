@@ -8,6 +8,9 @@ const bootstrap = async () => {
         discord: {
             token: getEnv("DISCORD_TOKEN"),
         },
+        etcd: {
+            host: getEnv("ETCD_HOST"),
+        },
     })
 
     const app = await NestFactory.createMicroservice(rootModule)
