@@ -1,15 +1,15 @@
 {
-    "name": "@discord-streamer/micro-command",
+    "name": "@discord-streamer/micro-overlay",
     "version": "1.0.0",
     "main": "index.js",
     "repository": "git@github.com:atomgenie/Discord-Streamer.git",
     "author": "Tran Tâm-Tanguy <thanh-tam-tangu.tran@epita.fr>",
     "license": "MIT",
-    "private": false,
     "scripts": {
         "dev": "NODE_PATH=./src ts-node ./src/index.ts"
     },
     "devDependencies": {
+        "@types/lodash": "^4.14.165",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.3"
     },
@@ -20,6 +20,7 @@
         "@nestjs/microservices": "^7.6.3",
         "discord.js": "^12.5.1",
         "etcd3": "^1.1.0",
+        "lodash": "^4.17.20",
         "reflect-metadata": "^0.1.13",
         "rxjs": "^6.6.3"
     }

@@ -8,6 +8,5 @@ export class DiscordOverlayService {
 
     public async startOverlay(guildId: string) {
         await this.etcdService.put(OVERLAY_PREFIX + guildId, "true")
-        console.log(await this.etcdService.getPrefix(OVERLAY_PREFIX))
     }
 }

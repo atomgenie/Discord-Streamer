@@ -2,3 +2,4 @@ node_modules
 build
 /\.envrc
 /etcd_data
+yarn-error.log
