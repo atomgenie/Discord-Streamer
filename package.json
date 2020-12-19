@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "workspaces": [
+        "packages/microservices/*"
+    ],
+    "name": "discord-streamer",
+    "devDependencies": {
+        "lerna": "^3.22.1",
+        "prettier": "^2.2.1"
+    },
+    "scripts": {
+        "postinstall": "yarn bootstrap",
+        "bootstrap": "lerna bootstrap"
+    }
+}
